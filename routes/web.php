@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +13,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Process 1 :
+Route::get('/', function () {
+//    return view('welcome');
+    return  "Perfectly Redairect";
+});
+
+
+
+Route::get('test', [TestController::class, 'test'])->name('test');
 
 //This is test comment
