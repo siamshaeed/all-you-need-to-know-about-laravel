@@ -24,3 +24,7 @@ Route::get('/', function () {
 });
 Route::get('test', [TestController::class, 'test'])->name('test');
 
+
+//Today Study :
+//laravel study video sesion
+
