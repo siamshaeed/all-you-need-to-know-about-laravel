@@ -22,7 +22,7 @@ Route::get('/', function () {
 //    return view('welcome');
     return  "Perfectly Redairect";
 });
-Route::get('test', [TestController::class, 'test'])->name('test');
+Route::get('test', [TestController::class, 'sumation'])->name('test');
 
 
 
